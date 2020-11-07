@@ -17,6 +17,8 @@ const getPageThree = (callback, finish) => {
   });
 };
 
+const getDownloadUrl = () => `<a href="csvs/${currentFilename}" download="data.csv" class="link">download as document</a>`
+
 const getFormattedDate = () => {
   const currentDate = new Date();
 
@@ -209,6 +211,7 @@ const server = http.createServer((req, res) => {
     ) {
       getPageThree(getData, (template) => {
         content += template;
+        content += getDownloadUrl();
         res.end(content);
       });
     }  else {
