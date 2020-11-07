@@ -1,0 +1,24 @@
+{
+  "name": "request-dou",
+  "version": "1.0.0",
+  "description": "request dou homework",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "nodejs",
+    "js"
+  ],
+  "author": "Minin Vladilen <v@mail.ru>",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "csv-parser": "^2.3.3",
+    "request": "^2.88.2"
+  }
+}
